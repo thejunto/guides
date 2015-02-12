@@ -37,9 +37,8 @@ waiting two business days for everybody to leave feedback**.
 Credits
 -------
 
-Thank you, [contributors](https://github.com/thoughtbot/guides/graphs/contributors)!
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+![Junto Studio](http://www.juntostudio.com/logo-square-75.png)
 
 These Guides were forked from [thoughtbot, inc](http://thoughtbot.com/community).
 
