@@ -120,6 +120,8 @@ CSS
 Sass
 ----
 
+* Prefer `overflow: auto` to `overflow: scroll`, because `scroll` will always
+  display scrollbars outside of OS X, even when content fits in the container.
 * Prefer mixins to `@extend`.
 
 Browsers

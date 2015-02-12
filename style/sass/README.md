@@ -13,6 +13,7 @@
 * Use one space between selector and `{`.
 * Use double quotation marks.
 * Use only lowercase, including colors.
+* Don't add a unit specification after `0` values, unless required by a mixin.
 * Use a leading zero in decimal numbers: `0.5` not `.5`
 * Use space around operands: `$variable * 1.5`, not `$variable*1.5`
 * Use parentheses around individual operations in shorthand declarations: `padding: ($variable * 1.5) ($variable * 2);`
@@ -22,13 +23,16 @@
 
 ## Selectors
 
+* Don't use ID's for style.
 * Use meaningful names: `$visual-grid-color` not `$color` or `$vslgrd-clr`.
 * Use ID and class names that are as short as possible but as long as necessary.
+* Avoid using the direct descendant selector `>`.
 * Avoid nesting more than 4 selectors deep.
 * Don't nest more than 6 selectors deep.
 * Avoid using the HTML tag in the class name: `section.news` not `section.news-section`.
 * Avoid using HTML tags on classes for generic markup `<div>`, `<span>`: `.widgets` not `div.widgets`.
 * Avoid using HTML tags on classes with specific class names like `.featured-articles`.
+* Avoid nesting within a media query.
 
 ## Organization
 
