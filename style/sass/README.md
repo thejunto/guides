@@ -36,5 +36,6 @@
 
 ## Organization
 
+* When using Rails, Use @import to import all stylesheets to application.scss. This permits you control the order of the imports and makes using sass variables and mixins easier.
 * Use HTML structure for ordering of selectors. Don't just put styles at the bottom of the Sass file.
 * Avoid having files longer than 100 lines.
