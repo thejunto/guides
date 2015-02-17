@@ -10,7 +10,6 @@ Maintain a Repo
   development machine or process.
 * Delete local and remote feature branches after merging.
 * Perform work in a feature branch.
-* Rebase frequently to incorporate upstream changes.
 * Use a [pull request] for code reviews.
 
 [pull request]: https://help.github.com/articles/using-pull-requests/
@@ -23,8 +22,6 @@ Create a local feature branch based off master.
     git checkout master
     git pull
     git checkout -b <branch-name>
-
-Prefix the branch name with your initials.
 
 Rebase frequently to incorporate upstream changes.
 
@@ -43,16 +40,6 @@ When you've staged the changes, commit them.
 Write a [good commit message]. Example format:
 
     Present-tense summary under 50 characters
-
-    * More information about commit (under 72 characters).
-    * More information about commit (under 72 characters).
-
-    http://project.management-system.com/ticket/123
-
-If you've created more than one commit, use a rebase to squash them into
-cohesive commits with good messages:
-
-    git rebase -i origin/master
 
 Share your branch.
 
@@ -89,26 +76,7 @@ When satisfied, they comment on the pull request `Ready to merge.`
 Merge
 -----
 
-Rebase interactively. Squash commits like "Fix whitespace" into one or a
-small number of valuable commit(s). Edit commit messages to reveal intent. Run
-tests.
-
-    git fetch origin
-    git rebase -i origin/master
-
-Force push your branch. This allows GitHub to automatically close your pull
-request and mark it as merged when your commit(s) are pushed to master. It also
- makes it possible to [find the pull request] that brought in your changes.
-
-    git push --force origin <branch-name>
-
-View a list of new commits. View changed files. Merge branch into master.
-
-    git log origin/master..<branch-name>
-    git diff --stat origin/master
-    git checkout master
-    git merge <branch-name> --ff-only
-    git push
+Run tests before merging. Use the Github interface to merge.
 
 Delete your remote feature branch.
 
@@ -117,5 +85,3 @@ Delete your remote feature branch.
 Delete your local feature branch.
 
     git branch --delete <branch-name>
-
-[find the pull request]: http://stackoverflow.com/a/17819027
