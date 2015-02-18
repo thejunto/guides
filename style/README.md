@@ -29,7 +29,7 @@ Formatting
   brace on its own line.
 * Indent continued lines two spaces.
 * Indent private methods equal to public methods.
-* TBD: Use 2 space indentation (no tabs).
+* Use 2 space indentation (no tabs).
 * Use an empty line between methods.
 * Use empty lines around multi-line blocks.
 * Use spaces around operators, except for unary operators, such as `!`.
